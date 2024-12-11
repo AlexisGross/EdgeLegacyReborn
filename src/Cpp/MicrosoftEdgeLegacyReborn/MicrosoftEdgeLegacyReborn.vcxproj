@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{532c9153-0b94-4909-9e6b-22ed567660ce}</ProjectGuid>
+    <RootNamespace>MicrosoftEdgeLegacyReborn</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.16299.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Converters.h" />
+    <ClInclude Include="CustomControls\Actions.xaml.h">
+      <DependentUpon>CustomControls\Actions.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\AddressBand.xaml.h">
+      <DependentUpon>CustomControls\AddressBand.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\LeftBadgeBox.xaml.h">
+      <DependentUpon>CustomControls\LeftBadgeBox.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\ReadButton.xaml.h">
+      <DependentUpon>CustomControls\ReadButton.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\RefreshBar.xaml.h">
+      <DependentUpon>CustomControls\RefreshBar.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\StyleableButton.xaml.h">
+      <DependentUpon>CustomControls\StyleableButton.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TabBar.xaml.h">
+      <DependentUpon>CustomControls\TabBar.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TabBarContainer.xaml.h">
+      <DependentUpon>CustomControls\TabBarContainer.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TabBarCustomGridView.xaml.h">
+      <DependentUpon>CustomControls\TabBarCustomGridView.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TabItem.xaml.h">
+      <DependentUpon>CustomControls\TabItem.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TabsBadgesAndButtons.xaml.h">
+      <DependentUpon>CustomControls\TabsBadgesAndButtons.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\TravelBar.xaml.h">
+      <DependentUpon>CustomControls\TravelBar.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="CustomControls\VerticalGridSplitter.xaml.h">
+      <DependentUpon>CustomControls\VerticalGridSplitter.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="MainPage.xaml.h">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="SharedFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="CustomControls\Actions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\AddressBand.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\LeftBadgeBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\ReadButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\RefreshBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\StyleableButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TabBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TabBarContainer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TabBarCustomGridView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TabItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TabsBadgesAndButtons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\TravelBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\VerticalGridSplitter.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="Converters.cpp" />
+    <ClCompile Include="CustomControls\Actions.xaml.cpp">
+      <DependentUpon>CustomControls\Actions.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\AddressBand.xaml.cpp">
+      <DependentUpon>CustomControls\AddressBand.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\LeftBadgeBox.xaml.cpp">
+      <DependentUpon>CustomControls\LeftBadgeBox.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\ReadButton.xaml.cpp">
+      <DependentUpon>CustomControls\ReadButton.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\RefreshBar.xaml.cpp">
+      <DependentUpon>CustomControls\RefreshBar.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\StyleableButton.xaml.cpp">
+      <DependentUpon>CustomControls\StyleableButton.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TabBar.xaml.cpp">
+      <DependentUpon>CustomControls\TabBar.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TabBarContainer.xaml.cpp">
+      <DependentUpon>CustomControls\TabBarContainer.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TabBarCustomGridView.xaml.cpp">
+      <DependentUpon>CustomControls\TabBarCustomGridView.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TabItem.xaml.cpp">
+      <DependentUpon>CustomControls\TabItem.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TabsBadgesAndButtons.xaml.cpp">
+      <DependentUpon>CustomControls\TabsBadgesAndButtons.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\TravelBar.xaml.cpp">
+      <DependentUpon>CustomControls\TravelBar.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="CustomControls\VerticalGridSplitter.xaml.cpp">
+      <DependentUpon>CustomControls\VerticalGridSplitter.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="MainPage.xaml.cpp">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SharedFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\ApplicationGuard\appguard.png" />
+    <Image Include="Assets\Badge.contrast-black.png" />
+    <Image Include="Assets\Badge.contrast-white.png" />
+    <Image Include="Assets\Badge.png" />
+    <Image Include="Assets\BookLibrary\GenericCover.png" />
+    <Image Include="Assets\BookLibrary\MicrosoftEdgeBooksSquare150x150.png" />
+    <Image Include="Assets\BookLibrary\Oobe-ReadEbook-Alternative.png" />
+    <Image Include="Assets\BookLibrary\Oobe-ReadEbook.png" />
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-100.png" />
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-125.png" />
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-150.png" />
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-400.png" />
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-100.png" />
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-125.png" />
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-150.png" />
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-400.png" />
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-100.png" />
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-125.png" />
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-150.png" />
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-200.png" />
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-400.png" />
+    <Image Include="Assets\BrowserImportExplanation.png" />
+    <Image Include="Assets\cursor_default.png" />
+    <Image Include="Assets\cursor_over.png" />
+    <Image Include="Assets\Dictionary\InlineLoadingDark.png" />
+    <Image Include="Assets\Dictionary\InlineLoadingLight.png" />
+    <Image Include="Assets\Dictionary\SidePaneLoading.png" />
+    <Image Include="Assets\HC_dark_cursor_default.png" />
+    <Image Include="Assets\HC_dark_cursor_over.png" />
+    <Image Include="Assets\HC_light_cursor_default.png" />
+    <Image Include="Assets\HC_light_cursor_over.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-129.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-16.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-256.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-32.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-336.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-48.png" />
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-63.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-129.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-16.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-256.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-32.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-336.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-48.png" />
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-63.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-129.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-16.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-256.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-32.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-336.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-48.png" />
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-63.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200_contrast-white.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400_contrast-black.png" />
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400_contrast-white.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100_contrast-black.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100_contrast-white.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125_contrast-black.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125_contrast-white.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150_contrast-black.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150_contrast-white.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200_contrast-black.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200_contrast-white.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400_contrast-black.png" />
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400_contrast-white.png" />
+    <Image Include="Assets\NewWindowIcon.scale-100.png" />
+    <Image Include="Assets\NewWindowIcon.scale-100_contrast-black.png" />
+    <Image Include="Assets\NewWindowIcon.scale-100_contrast-white.png" />
+    <Image Include="Assets\NewWindowIcon.scale-125.png" />
+    <Image Include="Assets\NewWindowIcon.scale-125_contrast-black.png" />
+    <Image Include="Assets\NewWindowIcon.scale-125_contrast-white.png" />
+    <Image Include="Assets\NewWindowIcon.scale-150.png" />
+    <Image Include="Assets\NewWindowIcon.scale-150_contrast-black.png" />
+    <Image Include="Assets\NewWindowIcon.scale-150_contrast-white.png" />
+    <Image Include="Assets\NewWindowIcon.scale-200.png" />
+    <Image Include="Assets\NewWindowIcon.scale-200_contrast-black.png" />
+    <Image Include="Assets\NewWindowIcon.scale-200_contrast-white.png" />
+    <Image Include="Assets\NewWindowIcon.scale-400.png" />
+    <Image Include="Assets\NewWindowIcon.scale-400_contrast-black.png" />
+    <Image Include="Assets\NewWindowIcon.scale-400_contrast-white.png" />
+    <Image Include="Assets\ReadingListEPUBImage360x270.png" />
+    <Image Include="Assets\ReadingListImage360x270.png" />
+    <Image Include="Assets\ReadingListPDFImage360x270.png" />
+    <Image Include="Assets\TabPeekDefaultImage800x600.png" />
+    <Image Include="Assets\TabPeekNewTabPageImage800x600.png" />
+    <Image Include="Assets\TabPeekPDFImage800x600.png" />
+    <Image Include="Assets\TabSweepExplanation.gif" />
+    <Image Include="Assets\TabSweepExplanation.png" />
+    <Image Include="Assets\TransparentPixel.png" />
+    <Image Include="Assets\WebNotifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ApplicationGuard\appguard.css" />
+    <None Include="Assets\ApplicationGuard\appguard.js" />
+    <None Include="Assets\ApplicationGuard\LearnMore.html" />
+    <None Include="Assets\BookViewer\bookviewer-hostext.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\BookViewer\bookviewer.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\BookViewer\css\bookcontent.css" />
+    <None Include="Assets\BookViewer\css\bookviewer.css" />
+    <None Include="Assets\BookViewer\js\bookviewer.js" />
+    <None Include="Assets\BookViewer\js\startup.js" />
+    <None Include="Assets\BookViewer\manifest_BookReader_B171F20233094AC88D05A8EF7B9763E8.json" />
+    <None Include="Assets\ContextMenu\HandleDefine.js" />
+    <None Include="Assets\ErrorPages\acr_error.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\BlockSite.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\defaultbrowser.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\DisableAboutFlag.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\dnserror.html" />
+    <None Include="Assets\ErrorPages\dnserror.js" />
+    <None Include="Assets\ErrorPages\ErrorPageScripts.js" />
+    <None Include="Assets\ErrorPages\ErrorPageStyles.css" />
+    <None Include="Assets\ErrorPages\forbidframingedge.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\hstscerterror.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\httpErrorPagesScripts.js" />
+    <None Include="Assets\ErrorPages\http_400.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_403.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_404.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_406.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_410.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_500.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_501.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\http_gen.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\ielogo.svg" />
+    <None Include="Assets\ErrorPages\invalidcert.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\navcancl.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\needhvsi.html" />
+    <None Include="Assets\ErrorPages\needie.html" />
+    <None Include="Assets\ErrorPages\pdferror.html" />
+    <None Include="Assets\ErrorPages\pdferrordisabledforregion.html" />
+    <None Include="Assets\ErrorPages\pdferrormfnotfound.html" />
+    <None Include="Assets\ErrorPages\pdferrorneedcontentlocally.html" />
+    <None Include="Assets\ErrorPages\pdferrorneedcredentials.html" />
+    <None Include="Assets\ErrorPages\pdferrorofflineaccessdenied.html" />
+    <None Include="Assets\ErrorPages\pdferrorquitapplicationguard.html" />
+    <None Include="Assets\ErrorPages\pdferrorrenewrentallicense.html" />
+    <None Include="Assets\ErrorPages\pdferrorrepurchasecontent.html" />
+    <None Include="Assets\ErrorPages\pdferrorunknownerror.html" />
+    <None Include="Assets\ErrorPages\phishsite.js" />
+    <None Include="Assets\ErrorPages\PhishSiteEdge.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\PhishSiteStyles.css" />
+    <None Include="Assets\ErrorPages\PhishSite_Iframe.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\proxyerror.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\repost.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\servbusy.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\sslnavcancel.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\startfresh.html" />
+    <None Include="Assets\ErrorPages\tlserror.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\TridentErrorPageStyles.css" />
+    <None Include="Assets\ErrorPages\unknownprotocol.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\WpcBlockFrame.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ErrorPages\WpcBlockSite.js" />
+    <None Include="Assets\HostExtensions\AutoFormFill\content\Autoformfill_ContentScript.js" />
+    <None Include="Assets\HostExtensions\AutoFormFill\document\Autoformfill_CheckFormFillEligibility.js" />
+    <None Include="Assets\HostExtensions\AutoFormFill\manifest_AutoFormFill_5ED10D46BD7E47DEB1F3685D2C0FCE08.json" />
+    <None Include="Assets\HostExtensions\AutoFormFill\Prefill\Autoformfill_Prefill.js" />
+    <None Include="Assets\HostExtensions\LearningTools\LearningTools.js" />
+    <None Include="Assets\HostExtensions\LearningTools\LearningToolsStyles.css" />
+    <None Include="Assets\HostExtensions\LearningTools\manifest_LearningTools_7706F933-971C-41D1-9899-8A026EB5D824.json" />
+    <None Include="Assets\HostExtensions\PinJSAPI\content\PinJSAPI_InjectedScript.js" />
+    <None Include="Assets\HostExtensions\PinJSAPI\manifest_PinJSAPI_EC01B57063BE468FAB6DB7EBFC3BF368.json" />
+    <None Include="Assets\OfflineTabs\OfflineTabs.html" />
+    <None Include="Assets\OfflineTabs\OfflineTabs_Files\OfflineTabs.css" />
+    <None Include="Assets\Persona\PersonaPShader.cso" />
+    <None Include="Assets\Persona\PersonaVShader.cso" />
+    <None Include="Assets\ReadingView\ContentPRV.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Assets\ReadingView\css\ReadingViewStyle.css" />
+    <None Include="Assets\ReadingView\ReadingViewer.js" />
+    <None Include="Assets\WebNotes\WebNotesContent.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\BrowserMDL.ttf" />
+    <Font Include="Assets\Fonts\BrowserMDL2AnimationAssets.ttf" />
+    <Font Include="Assets\Fonts\ReadMDL2.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+    <PRIResource Include="Strings\es-AR\Resources.resw" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

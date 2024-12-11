@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:mx="http://schemas.microsoft.com/appx/2013/xbox/manifest"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:uap5="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
+  xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+  xmlns:wincap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities"
+  xmlns:wincap3="http://schemas.microsoft.com/appx/manifest/foundation/windows10/windowscapabilities/3"
+  xmlns:uap18="http://schemas.microsoft.com/appx/manifest/uap/windows10/18"
+  IgnorableNamespaces="mp mx rescap uap uap3 uap5 uap6 wincap wincap3 uap18">
+
+  <Identity
+    Name="Microsoft.MicrosoftEdgeReborn"
+    Publisher="CN=EdgeLegacyReborn Project"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="424234e0-17b1-429e-879c-ff7b42b58bb2" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>Microsoft Edge (Legacy) Reborn</DisplayName>
+    <PublisherDisplayName>EdgeReborn Project</PublisherDisplayName>
+    <Logo>Assets\MicrosoftEdgeStore.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="MicrosoftEdgeReborn"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="MicrosoftEdgeReborn.App" uap18:RuntimeBehavior="windowsApp">
+      <uap:VisualElements DisplayName="ms-resource:AppDisplayName"
+                          Square150x150Logo="Assets\MicrosoftEdgeSquare150x150.png"
+                          Square44x44Logo="Assets\MicrosoftEdgeSquare44x44.png"
+                          Description="ms-resource:AppDescription"
+                          BackgroundColor="transparent">
+        <uap:DefaultTile ShortName="ms-resource:AppDisplayName"
+                         Wide310x150Logo="Assets\MicrosoftEdgeWide310x150.png"
+                         Square71x71Logo="Assets\MicrosoftEdgeSquare71x71.png"
+                         Square310x310Logo="Assets\MicrosoftEdgeSquare310x310.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo"/>
+            <uap:ShowOn Tile="wide310x150Logo"/>
+            <uap:ShowOn Tile="square310x310Logo"/>
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile >
+        <uap:SplashScreen Image="Assets\MicrosoftEdgeSplashScreen.png"  BackgroundColor="#D0D0D0" uap5:Optional="true"/>
+        <uap:LockScreen Notification="badge" BadgeLogo="Assets\Badge.png"/>
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="http">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="https">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="read">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="microsoft-edge">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="microsoft-edge-holographic">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ms-xbl-3d8b930f">
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:Protocol >
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="html">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="text/html">.htm</uap:FileType>
+              <uap:FileType ContentType="text/html">.html</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="pdf">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="application/pdf">.pdf</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:Logo>Assets\MicrosoftEdgePDF.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="svg">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="mage/svg+xml">.svg</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="xml">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="text/xml">.xml</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:Logo>Assets\MicrosoftEdgeFile.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="epub">
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="application/epub+zip">.epub</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:Logo>Assets\MicrosoftEdgeEPUB.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+        <!-- The AppUriHandler below is used by the Books library to catch sharing URLs
+             (share.microsoft.com/book/[,BOOKID][,?PARAMS] e.g.) directly instead of using a web redirection.
+             Thanks to server-side configuration, though we register the share.microsoft.com host, if the default browser is not Microsoft Edge:
+                1. share.microsoft.com/book/... urls still arrive in Microsoft Edge (except if the user deactivates App For Websites);
+                2. other [anything].microsoft.com/[anything]... urls arrive in default brother/other registered app. -->
+        <uap3:Extension Category="windows.appUriHandler">
+          <uap3:AppUriHandler>
+            <uap3:Host Name="share.microsoft.com"/>
+          </uap3:AppUriHandler>
+        </uap3:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient"/>
+    <Capability Name="privateNetworkClientServer"/>
+    <!-- <rescap:Capability Name="childWebContent"/>
+    <rescap:Capability Name="confirmAppClose"/>
+    <rescap:Capability Name="enterpriseDataPolicy"/>
+    <rescap:Capability Name="extendedExecutionBackgroundAudio"/>
+    <rescap:Capability Name="extendedExecutionUnconstrained"/>
+    <rescap:Capability Name="featureStagingInfo"/>
+    <rescap:Capability Name="hevcPlayback"/>
+    <rescap:Capability Name="packageQuery"/>
+    <rescap:Capability Name="packageManagement"/>
+    <rescap:Capability Name="slapiQueryLicenseValue"/>
+    <rescap:Capability Name="windowsHelloCredentialAccess"/>
+    <rescap:Capability Name="registryRead"/>
+    <rescap:Capability Name="lpacWebPlatform"/>
+    <rescap:Capability Name="lpacAppExperience"/>
+    <rescap:Capability Name="lpacCryptoServices"/>
+    <rescap:Capability Name="lpacIdentityServices"/>
+    <rescap:Capability Name="lpacEnterprisePolicyChangeNotifications"/>
+    <rescap:Capability Name="lpacMedia"/>
+    <rescap:Capability Name="lpacPnPNotifications"/>
+    <rescap:Capability Name="lpacServicesManagement"/>
+    <rescap:Capability Name="lpacSessionManagement"/>
+    <rescap:Capability Name="lpacInstrumentation"/>
+    <rescap:Capability Name="lpacPrinting"/>
+    <rescap:Capability Name="lpacPayments"/>
+    <rescap:Capability Name="lpacClipboard"/>
+    <rescap:Capability Name="lpacCom"/>
+    <rescap:Capability Name="lpacIME"/>
+    <rescap:Capability Name="previewStore"/>
+    <rescap:Capability Name="lpacPackageManagerOperation"/>
+    <rescap:Capability Name="smbios"/>-->
+    <uap:Capability Name="enterpriseAuthentication"/>
+    <uap:Capability Name="picturesLibrary"/>
+    <uap:Capability Name="sharedUserCertificates"/>
+    <uap:Capability Name="userAccountInformation"/>
+    <uap6:Capability Name="graphicsCapture"/>
+    <!--<wincap:Capability Name="cortanaSettings"/>
+    <wincap:Capability Name="enterpriseCloudSSO"/>
+    <wincap:Capability Name="microsoftEdgeRemoteDebugging"/>
+    <wincap:Capability Name="liveIdService"/>
+    <wincap:Capability Name="settingSyncConfiguration"/>
+    <wincap:Capability Name="storeAppInstall"/>
+    <wincap:Capability Name="storeConfiguration"/>
+    <wincap:Capability Name="targetedContent"/>-->
+    <DeviceCapability Name="location"/>
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="webcam"/>
+  </Capabilities>
+</Package>

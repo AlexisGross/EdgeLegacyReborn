@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Application Guard needed</title>
+    <link rel="stylesheet" type="text/css" href="ErrorPageStyles.css">
+    <script src="ms-appx-web:///Assets/ErrorPages/ErrorPageScripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        "use strict";
+
+        window.onload = function () {
+            if (IsInApplicationContainer())
+            {
+                //
+                // needhost_trusted_url_page will mostly not needed. Will remove once it's fully tested after this task is done:
+                // Task 17535716: WDAG Dynamic switching integration Part2: integrate hvsi DVC API to Edge
+                // Also will update this page to align with PM's design in the task above
+                //
+                document.getElementById("needhvsi_untrusted_url_page").style.display = "none";
+
+                if (IsNetworkIsolationApiErrorPage())
+                {
+                    document.getElementById("needhost_trusted_url_page").style.display = "none";
+                }
+                else
+                {
+                    document.getElementById("needhvsi_network_isolation_api_fail_page").style.display = "none";
+                }
+            }
+            else
+            {
+                document.getElementById("needhost_trusted_url_page").style.display = "none";
+                // Determine if we are in the network isolation api fail case, and change the
+                // page accordingly.
+                if (IsNetworkIsolationApiErrorPage())
+                {
+                    document.getElementById("needhvsi_untrusted_url_page").style.display = "none";
+                }
+                else
+                {
+                    document.getElementById("needhvsi_network_isolation_api_fail_page").style.display = "none";
+                }
+                
+                if (HasHVSIAlreadyLaunched())
+                {
+                    // If HVSI has already launched, do not show launch button.
+                    document.getElementById("LaunchInHVSI").style.display = "none";
+                }
+            }
+
+        };
+
+        function IsNetworkIsolationApiErrorPage()
+        {
+            return (findValue("networkApiFail=") === "1");
+        }
+
+        function HasHVSIAlreadyLaunched()
+        {
+            return (findValue("hvsiStarted=") === "1");
+        }
+
+        function IsInApplicationContainer()
+        {
+            return (findValue("inContainer=") === "1")
+        }
+        // Launch URL in HVSI
+        function OnLaunchInHVSIClicked()
+        {
+            window.external.LaunchInHVSI(getNavigationURL(), GetUID());
+        }
+
+        function GetUID()
+        {
+            return (findValue("UID=") || "N/A");
+        }
+    </script>
+</head>
+<body>
+    <div id="Wrapper">
+        <div id="NotConnected">
+            <table>
+                <tr>
+                    <td><span id="icon">&#xF0EF;</span></td>
+                    <td>
+                        <div id="needhvsi_untrusted_url_page">
+                            <h1 id="needhvsi_untrusted_url_header">This page opens in Application Guard for Microsoft Edge</h1>
+                            <p id="needhvsi_untrusted_url_body">
+                                To help protect your PC, you&rsquo;ll need to browse this page in a separate environment for Microsoft Edge.
+                                Some features of the browser might be restricted in Application Guard.
+                            </p>
+                            <br />
+                            <button id="LaunchInHVSI"
+                                    class="pushbutton"
+                                    type="submit"
+                                    onclick="OnLaunchInHVSIClicked();">
+                                <id id="needhvsi_open_in_hvsi">Open in Application Guard</id>
+                            </button>
+                        </div>
+                        <div id="needhvsi_network_isolation_api_fail_page">
+                            <h1 id="needhvsi_network_isolation_api_fail_header">We can&rsquo;t open this page right now</h1>
+                            <p id="needhvsi_network_isolation_api_fail_body1">Try this</p>
+                            <ul>
+                                <li><a href="#" onclick="clickRefresh(); return false;"><id id="needhvsi_network_isolation_api_fail_refresh">Refresh</id></a></li>
+                                <li><a href="#" onclick="clickSendFeedback()" id="dnsSendFeedbackLink"><id id="dnserror_unavailable_sendfeedback">Report this issue</id></a></li>
+                            </ul>
+                            <br>
+                            <a href="#" onclick="clickPrivacyStatement()" id="needhvsi_PrivacyStatementLink"><id id="needhvsi_privacystatement"><small>Privacy statement</small></id></a>
+                        </div>
+                        <div id="needhost_trusted_url_page">
+                            <h1 id="needhost_trusted_url_header">This page opens on Host Default Browser</h1>
+                            <p id="needhost_trusted_url_body">
+                                You are accessing trusted site in Application Guard. It&rsquo;ll be opened on host default browser.
+                            </p>
+                            <br />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

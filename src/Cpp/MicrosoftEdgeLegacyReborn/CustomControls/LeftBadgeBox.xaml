@@ -1,0 +1,22 @@
+﻿<UserControl
+    x:Class="MicrosoftEdgeLegacyReborn.CustomUserControls.LeftBadgeBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MicrosoftEdgeLegacyReborn"
+    xmlns:CustomControls="using:MicrosoftEdgeLegacyReborn.CustomUserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="40"
+    d:DesignWidth="40">
+
+    <StackPanel>
+        <CustomControls:StyleableButton Margin="0,0,2,0"
+                               Height="32"
+                               VerticalContentAlignment="Stretch"
+                               BorderThickness="0,0,0,0"
+                               AutomationProperties.Name="Buscar"
+                               AutomationProperties.AutomationId="TrustStateBadge"
+                               ToolTipService.ToolTip="Buscar"/>
+    </StackPanel>
+</UserControl>

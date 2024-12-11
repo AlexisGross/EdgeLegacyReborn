@@ -1,0 +1,47 @@
+﻿<UserControl
+    x:Class="MicrosoftEdgeLegacyReborn.CustomUserControls.AddressBand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MicrosoftEdgeLegacyReborn"
+    xmlns:CustomControls="using:MicrosoftEdgeLegacyReborn.CustomUserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="40"
+    d:DesignWidth="500">
+
+    <StackPanel x:Name="AddressBandPanel"
+                Height="32"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid>
+            <Border x:Name="AddresBandBorder" BorderThickness="1,1,1,1" BorderBrush="#FFCCCCCC"/>
+            <Border x:Name="AddresBandRevealBorder" BorderThickness="1,1,1,1"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <CustomControls:LeftBadgeBox Grid.Column="0" TabIndex="1"/>
+                <RichEditBox Grid.Column="1"
+                             Padding="3,7,3,0"
+                             Height="32"
+                             TabIndex="6"
+                             Background="Transparent"
+                             BorderBrush="Transparent"
+                             FocusVisualPrimaryBrush="Transparent"
+                             FocusVisualSecondaryBrush="Transparent"
+                             BorderThickness="0"
+                             PlaceholderText="Buscar o escribir direccion web"/>
+                <CustomControls:ReadButton Grid.Column="2" TabIndex="6"/>
+            </Grid>
+        </Grid>
+        <Popup/>
+    </StackPanel>
+</UserControl>

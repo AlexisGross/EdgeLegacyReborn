@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Cluesoft/EdgeLegacyReborn">
-    <img src="images/microsoft-edge-logo-755278AE39-seeklogo.com.png" alt="Logo" width="80" height="80">
+    <img src="docs/images/Microsoft Edge (Legacy) contrast-standard.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Edge Legacy: Reborn</h3>
@@ -99,7 +99,7 @@ This is how to get the source code for Edge Legacy.
 
 Before you begin, you will need:
   ```sh
-  Visual Studio 2022+
+  Visual Studio 2017+
   Windows 10 SDK 19041 or Higher
   Universal Windows Platform Add-on
   Git
@@ -138,7 +138,8 @@ This project can be used for either a template for your browser, or just a littl
 ## Roadmap
 
 - [ ] Tabs
-- [ ] Search History
+- [ ] Search
+    - Search History
 - [ ] Downloads
     - [ ] Download History
 

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E442ECD5-7311-4E7E-B092-2FA460B629BA}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MicrosoftEdgeLegacyReborn</RootNamespace>
+    <AssemblyName>MicrosoftEdgeLegacyReborn</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters.cs" />
+    <Compile Include="CustomUserControls\Actions.xaml.cs">
+      <DependentUpon>Actions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\AddressBand.xaml.cs">
+      <DependentUpon>AddressBand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\LeftBadgeBox.xaml.cs">
+      <DependentUpon>LeftBadgeBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\ReadButton.xaml.cs">
+      <DependentUpon>ReadButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\RefreshBar.xaml.cs">
+      <DependentUpon>RefreshBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\StyleableButton.xaml.cs">
+      <DependentUpon>StyleableButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TabBar.xaml.cs">
+      <DependentUpon>TabBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TabBarContainer.xaml.cs">
+      <DependentUpon>TabBarContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TabBarCustomGridView.xaml.cs">
+      <DependentUpon>TabBarCustomGridView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TabItem.xaml.cs">
+      <DependentUpon>TabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TabsBadgesAndButtons.xaml.cs">
+      <DependentUpon>TabsBadgesAndButtons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\TravelBar.xaml.cs">
+      <DependentUpon>TravelBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUserControls\VerticalGridSplitter.xaml.cs">
+      <DependentUpon>VerticalGridSplitter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharedFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ApplicationGuard\appguard.css" />
+    <Content Include="Assets\ApplicationGuard\appguard.js" />
+    <Content Include="Assets\ApplicationGuard\appguard.png" />
+    <Content Include="Assets\ApplicationGuard\LearnMore.html" />
+    <Content Include="Assets\Badge.contrast-black.png" />
+    <Content Include="Assets\Badge.contrast-white.png" />
+    <Content Include="Assets\Badge.png" />
+    <Content Include="Assets\BookLibrary\GenericCover.png" />
+    <Content Include="Assets\BookLibrary\MicrosoftEdgeBooksSquare150x150.png" />
+    <Content Include="Assets\BookLibrary\Oobe-ReadEbook-Alternative.png" />
+    <Content Include="Assets\BookLibrary\Oobe-ReadEbook.png" />
+    <Content Include="Assets\BookLibrary\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\BookLibrary\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\BookLibrary\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\BookLibrary\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\BookLibrary\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\BookLibrary\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\BookLibrary\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\BookLibrary\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\BookLibrary\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\BookLibrary\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\BookLibrary\Square71x71Logo.scale-100.png" />
+    <Content Include="Assets\BookLibrary\Square71x71Logo.scale-125.png" />
+    <Content Include="Assets\BookLibrary\Square71x71Logo.scale-150.png" />
+    <Content Include="Assets\BookLibrary\Square71x71Logo.scale-200.png" />
+    <Content Include="Assets\BookLibrary\Square71x71Logo.scale-400.png" />
+    <Content Include="Assets\BookViewer\bookviewer-hostext.htm" />
+    <Content Include="Assets\BookViewer\bookviewer.htm" />
+    <Content Include="Assets\BookViewer\css\bookcontent.css" />
+    <Content Include="Assets\BookViewer\css\bookviewer.css" />
+    <Content Include="Assets\BookViewer\js\bookviewer.js" />
+    <Content Include="Assets\BookViewer\js\startup.js" />
+    <Content Include="Assets\BrowserImportExplanation.png" />
+    <Content Include="Assets\ContextMenu\HandleDefine.js" />
+    <Content Include="Assets\cursor_default.png" />
+    <Content Include="Assets\cursor_over.png" />
+    <Content Include="Assets\Dictionary\InlineLoadingDark.png" />
+    <Content Include="Assets\Dictionary\InlineLoadingLight.png" />
+    <Content Include="Assets\Dictionary\SidePaneLoading.png" />
+    <Content Include="Assets\ErrorPages\acr_error.htm" />
+    <Content Include="Assets\ErrorPages\BlockSite.htm" />
+    <Content Include="Assets\ErrorPages\defaultbrowser.htm" />
+    <Content Include="Assets\ErrorPages\DisableAboutFlag.htm" />
+    <Content Include="Assets\ErrorPages\dnserror.html" />
+    <Content Include="Assets\ErrorPages\dnserror.js" />
+    <Content Include="Assets\ErrorPages\ErrorPageScripts.js" />
+    <Content Include="Assets\ErrorPages\ErrorPageStyles.css" />
+    <Content Include="Assets\ErrorPages\forbidframingedge.htm" />
+    <Content Include="Assets\ErrorPages\hstscerterror.htm" />
+    <Content Include="Assets\ErrorPages\httpErrorPagesScripts.js" />
+    <Content Include="Assets\ErrorPages\http_400.htm" />
+    <Content Include="Assets\ErrorPages\http_403.htm" />
+    <Content Include="Assets\ErrorPages\http_404.htm" />
+    <Content Include="Assets\ErrorPages\http_406.htm" />
+    <Content Include="Assets\ErrorPages\http_410.htm" />
+    <Content Include="Assets\ErrorPages\http_500.htm" />
+    <Content Include="Assets\ErrorPages\http_501.htm" />
+    <Content Include="Assets\ErrorPages\http_gen.htm" />
+    <Content Include="Assets\ErrorPages\ielogo.svg" />
+    <Content Include="Assets\ErrorPages\invalidcert.htm" />
+    <Content Include="Assets\ErrorPages\navcancl.htm" />
+    <Content Include="Assets\ErrorPages\needhvsi.html" />
+    <Content Include="Assets\ErrorPages\needie.html" />
+    <Content Include="Assets\ErrorPages\pdferror.html" />
+    <Content Include="Assets\ErrorPages\pdferrordisabledforregion.html" />
+    <Content Include="Assets\ErrorPages\pdferrormfnotfound.html" />
+    <Content Include="Assets\ErrorPages\pdferrorneedcontentlocally.html" />
+    <Content Include="Assets\ErrorPages\pdferrorneedcredentials.html" />
+    <Content Include="Assets\ErrorPages\pdferrorofflineaccessdenied.html" />
+    <Content Include="Assets\ErrorPages\pdferrorquitapplicationguard.html" />
+    <Content Include="Assets\ErrorPages\pdferrorrenewrentallicense.html" />
+    <Content Include="Assets\ErrorPages\pdferrorrepurchasecontent.html" />
+    <Content Include="Assets\ErrorPages\pdferrorunknownerror.html" />
+    <Content Include="Assets\ErrorPages\phishsite.js" />
+    <Content Include="Assets\ErrorPages\PhishSiteEdge.htm" />
+    <Content Include="Assets\ErrorPages\PhishSiteStyles.css" />
+    <Content Include="Assets\ErrorPages\PhishSite_Iframe.htm" />
+    <Content Include="Assets\ErrorPages\proxyerror.htm" />
+    <Content Include="Assets\ErrorPages\repost.htm" />
+    <Content Include="Assets\ErrorPages\servbusy.htm" />
+    <Content Include="Assets\ErrorPages\sslnavcancel.htm" />
+    <Content Include="Assets\ErrorPages\startfresh.html" />
+    <Content Include="Assets\ErrorPages\tlserror.htm" />
+    <Content Include="Assets\ErrorPages\TridentErrorPageStyles.css" />
+    <Content Include="Assets\ErrorPages\unknownprotocol.htm" />
+    <Content Include="Assets\ErrorPages\WpcBlockFrame.htm" />
+    <Content Include="Assets\ErrorPages\WpcBlockSite.js" />
+    <Content Include="Assets\HC_dark_cursor_default.png" />
+    <Content Include="Assets\HC_dark_cursor_over.png" />
+    <Content Include="Assets\HC_light_cursor_default.png" />
+    <Content Include="Assets\HC_light_cursor_over.png" />
+    <Content Include="Assets\HostExtensions\AutoFormFill\content\Autoformfill_ContentScript.js" />
+    <Content Include="Assets\HostExtensions\AutoFormFill\document\Autoformfill_CheckFormFillEligibility.js" />
+    <Content Include="Assets\HostExtensions\AutoFormFill\Prefill\Autoformfill_Prefill.js" />
+    <Content Include="Assets\HostExtensions\LearningTools\LearningTools.js" />
+    <Content Include="Assets\HostExtensions\LearningTools\LearningToolsStyles.css" />
+    <Content Include="Assets\HostExtensions\PinJSAPI\content\PinJSAPI_InjectedScript.js" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-129.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-16.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-256.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-32.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-336.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-48.png" />
+    <Content Include="Assets\MicrosoftEdgeEPUB.targetsize-63.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-129.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-16.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-256.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-32.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-336.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-48.png" />
+    <Content Include="Assets\MicrosoftEdgeFile.targetsize-63.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-129.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-16.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-256.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-32.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-336.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-48.png" />
+    <Content Include="Assets\MicrosoftEdgePDF.targetsize-63.png" />
+    <Content Include="Assets\MicrosoftEdgeSplashScreen.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSplashScreen.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSplashScreen.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSplashScreen.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSplashScreen.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSplashScreen.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSplashScreen.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSplashScreen.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSplashScreen.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSplashScreen.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSplashScreen.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSplashScreen.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSplashScreen.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSplashScreen.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSplashScreen.scale-400_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare150x150.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare150x150.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare150x150.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare150x150.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare150x150.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare150x150.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare150x150.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare150x150.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare150x150.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare150x150.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare150x150.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare150x150.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare150x150.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare150x150.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare150x150.scale-400_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare310x310.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare310x310.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare310x310.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare310x310.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare310x310.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare310x310.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare310x310.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare310x310.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare310x310.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare310x310.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare310x310.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare310x310.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare310x310.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare310x310.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare310x310.scale-400_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.scale-400_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-16_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-16_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-20_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-20_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-24_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-24_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-256_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-256_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-30_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-30_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-32_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-32_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-36_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-36_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-40_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-40_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-48_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-48_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-64_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-64_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-72_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-72_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-80_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-80_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-white.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare44x44.targetsize-96_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare44x44.targetsize-96_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare50x50.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare50x50.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare50x50.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare71x71.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare71x71.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare71x71.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare71x71.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare71x71.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare71x71.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare71x71.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare71x71.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare71x71.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare71x71.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare71x71.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare71x71.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeSquare71x71.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeSquare71x71.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeSquare71x71.scale-400_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeStore.scale-100.png" />
+    <Content Include="Assets\MicrosoftEdgeStore.scale-125.png" />
+    <Content Include="Assets\MicrosoftEdgeStore.scale-150.png" />
+    <Content Include="Assets\MicrosoftEdgeStore.scale-200.png" />
+    <Content Include="Assets\MicrosoftEdgeStore.scale-400.png" />
+    <Content Include="Assets\MicrosoftEdgeWide310x150.scale-100.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeWide310x150.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeWide310x150.scale-100_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeWide310x150.scale-125.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeWide310x150.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeWide310x150.scale-125_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeWide310x150.scale-150.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeWide310x150.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeWide310x150.scale-150_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeWide310x150.scale-200.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeWide310x150.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeWide310x150.scale-200_contrast-white.png" />
+    <Content Include="Assets\MicrosoftEdgeWide310x150.scale-400.png" />
+    <Content Include="Assets\contrast-black\MicrosoftEdgeWide310x150.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\MicrosoftEdgeWide310x150.scale-400_contrast-white.png" />
+    <Content Include="Assets\NewInprivateWindowIcon.scale-100.png" />
+    <Content Include="Assets\contrast-black\NewInprivateWindowIcon.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewInprivateWindowIcon.scale-100_contrast-white.png" />
+    <Content Include="Assets\NewInprivateWindowIcon.scale-125.png" />
+    <Content Include="Assets\contrast-black\NewInprivateWindowIcon.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewInprivateWindowIcon.scale-125_contrast-white.png" />
+    <Content Include="Assets\NewInprivateWindowIcon.scale-150.png" />
+    <Content Include="Assets\contrast-black\NewInprivateWindowIcon.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewInprivateWindowIcon.scale-150_contrast-white.png" />
+    <Content Include="Assets\NewInprivateWindowIcon.scale-200.png" />
+    <Content Include="Assets\contrast-black\NewInprivateWindowIcon.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewInprivateWindowIcon.scale-200_contrast-white.png" />
+    <Content Include="Assets\NewInprivateWindowIcon.scale-400.png" />
+    <Content Include="Assets\contrast-black\NewInprivateWindowIcon.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewInprivateWindowIcon.scale-400_contrast-white.png" />
+    <Content Include="Assets\NewWindowIcon.scale-100.png" />
+    <Content Include="Assets\contrast-black\NewWindowIcon.scale-100_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewWindowIcon.scale-100_contrast-white.png" />
+    <Content Include="Assets\NewWindowIcon.scale-125.png" />
+    <Content Include="Assets\contrast-black\NewWindowIcon.scale-125_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewWindowIcon.scale-125_contrast-white.png" />
+    <Content Include="Assets\NewWindowIcon.scale-150.png" />
+    <Content Include="Assets\contrast-black\NewWindowIcon.scale-150_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewWindowIcon.scale-150_contrast-white.png" />
+    <Content Include="Assets\NewWindowIcon.scale-200.png" />
+    <Content Include="Assets\contrast-black\NewWindowIcon.scale-200_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewWindowIcon.scale-200_contrast-white.png" />
+    <Content Include="Assets\NewWindowIcon.scale-400.png" />
+    <Content Include="Assets\contrast-black\NewWindowIcon.scale-400_contrast-black.png" />
+    <Content Include="Assets\contrast-white\NewWindowIcon.scale-400_contrast-white.png" />
+    <Content Include="Assets\OfflineTabs\OfflineTabs.html" />
+    <Content Include="Assets\OfflineTabs\OfflineTabs_Files\OfflineTabs.css" />
+    <Content Include="Assets\ReadingListEPUBImage360x270.png" />
+    <Content Include="Assets\ReadingListImage360x270.png" />
+    <Content Include="Assets\ReadingListPDFImage360x270.png" />
+    <Content Include="Assets\ReadingView\ContentPRV.htm" />
+    <Content Include="Assets\ReadingView\css\ReadingViewStyle.css" />
+    <Content Include="Assets\ReadingView\ReadingViewer.js" />
+    <Content Include="Assets\TabPeekDefaultImage800x600.png" />
+    <Content Include="Assets\TabPeekNewTabPageImage800x600.png" />
+    <Content Include="Assets\TabPeekPDFImage800x600.png" />
+    <Content Include="Assets\TabSweepExplanation.gif" />
+    <Content Include="Assets\TabSweepExplanation.png" />
+    <Content Include="Assets\TransparentPixel.png" />
+    <Content Include="Assets\WebNotes\WebNotesContent.htm" />
+    <Content Include="Assets\WebNotifications.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="CustomUserControls\Actions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\AddressBand.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\LeftBadgeBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\ReadButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\RefreshBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\StyleableButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TabBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TabBarContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TabBarCustomGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TabsBadgesAndButtons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\TravelBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUserControls\VerticalGridSplitter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\contrast-standar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\BookViewer\manifest_BookReader_B171F20233094AC88D05A8EF7B9763E8.json" />
+    <Content Include="Assets\Fonts\BrowserMDL.ttf" />
+    <Content Include="Assets\Fonts\BrowserMDL2AnimationAssets.ttf" />
+    <Content Include="Assets\Fonts\ReadMDL2.ttf" />
+    <None Include="Assets\HostExtensions\AutoFormFill\manifest_AutoFormFill_5ED10D46BD7E47DEB1F3685D2C0FCE08.json" />
+    <None Include="Assets\HostExtensions\LearningTools\manifest_LearningTools_7706F933-971C-41D1-9899-8A026EB5D824.json" />
+    <None Include="Assets\HostExtensions\PinJSAPI\manifest_PinJSAPI_EC01B57063BE468FAB6DB7EBFC3BF368.json" />
+    <None Include="Assets\Persona\PersonaPShader.cso" />
+    <None Include="Assets\Persona\PersonaVShader.cso" />
+    <PRIResource Include="Strings\es-AR\Resources.resw" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

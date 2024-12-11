@@ -1,0 +1,22 @@
+﻿<Application
+    x:Class="MicrosoftEdgeLegacyReborn.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MicrosoftEdgeLegacyReborn">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <!--Light theme-->
+                <ResourceDictionary x:Key="Light">
+
+                </ResourceDictionary>
+
+                <!--Dark theme-->
+                <ResourceDictionary x:Key="Dark">
+
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

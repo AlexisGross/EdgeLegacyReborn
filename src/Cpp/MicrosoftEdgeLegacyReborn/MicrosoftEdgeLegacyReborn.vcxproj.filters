@@ -1,0 +1,1197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>532c9153-0b94-4909-9e6b-22ed567660ce</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>f225704f-90fd-49ba-8326-708f336823e6</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Assets\ApplicationGuard">
+      <UniqueIdentifier>{29806a2a-d10a-422d-8a3f-5311f5ee3134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\BookLibrary">
+      <UniqueIdentifier>{e5b82399-63ca-4fdf-bb6b-fccbf6156b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\BookViewer">
+      <UniqueIdentifier>{96a3b1d4-4a90-4edd-970f-07c2fb49642a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ContextMenu">
+      <UniqueIdentifier>{bac87a6e-e96d-4e1b-bc75-c3199de10d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Dictionary">
+      <UniqueIdentifier>{9b93b191-eb73-4516-87fa-1953329561d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ErrorPages">
+      <UniqueIdentifier>{c9db52bc-683c-443a-80f5-bf303fbbbe75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Fonts">
+      <UniqueIdentifier>{43b3f282-ad9e-4a41-8b2d-067ce0586f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions">
+      <UniqueIdentifier>{3b1e9883-6c3e-4342-aa97-75baec202c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\OfflineTabs">
+      <UniqueIdentifier>{10b7f62f-637d-44d5-8807-c53f1e6d25a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Persona">
+      <UniqueIdentifier>{3e6d900c-9eaa-4e9f-929d-2ad133be4155}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ReadingView">
+      <UniqueIdentifier>{c842bf75-3755-4aee-b1a9-acbd1e5dfda1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\WebNotes">
+      <UniqueIdentifier>{f704f8c9-1a3f-42f3-8f92-6db951687a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\BookViewer\css">
+      <UniqueIdentifier>{3fc37990-eeb9-446b-8897-132f4b014dea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\BookViewer\js">
+      <UniqueIdentifier>{c0d4c5fa-d34a-436b-912b-4caec5fa43fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\OfflineTabs\OfflineTabs_Files">
+      <UniqueIdentifier>{04dbc0f3-088a-4668-99ff-948083ddcfab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\ReadingView\css">
+      <UniqueIdentifier>{3f6805b3-b3be-4868-bfd7-6da6799d2f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\AutoFormFill">
+      <UniqueIdentifier>{f0d89c0a-44a7-4db1-b9c8-a5dad9cb546b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\LearningTools">
+      <UniqueIdentifier>{04335122-5b23-467e-84d3-5cc09379c252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\PinJSAPI">
+      <UniqueIdentifier>{e0673201-7d70-493f-8b1a-420b40331e40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\AutoFormFill\content">
+      <UniqueIdentifier>{09c4584c-0a81-49a5-83d4-daf695bcbedc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\AutoFormFill\document">
+      <UniqueIdentifier>{ab3527eb-5558-4673-b4cd-fb6e0423b0de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\AutoFormFill\Prefill">
+      <UniqueIdentifier>{25856a06-17f1-4dcf-abe0-6c60e0d85e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\HostExtensions\PinJSAPI\content">
+      <UniqueIdentifier>{1dd894c7-7a9f-4ac9-b5ba-3a58c80186a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{aab9e84b-521a-4d00-9fe2-171a63a88061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\es-AR">
+      <UniqueIdentifier>{fe7cf5cf-48ea-4a2b-b423-f989ebb90cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\en-US">
+      <UniqueIdentifier>{ac95d8ce-d353-493a-bfde-4f0fcca18074}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomControls">
+      <UniqueIdentifier>{a62557b2-6818-44ce-83a6-e80a61603c37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Converters.cpp" />
+    <ClCompile Include="SharedFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Converters.h" />
+    <ClInclude Include="SharedFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="CustomControls\Actions.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\AddressBand.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\LeftBadgeBox.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\ReadButton.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\RefreshBar.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\StyleableButton.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TabBarContainer.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TabBarCustomGridView.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TabsBadgesAndButtons.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TravelBar.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\VerticalGridSplitter.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TabItem.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+    <Page Include="CustomControls\TabBar.xaml">
+      <Filter>CustomControls</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Badge.contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Badge.contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Badge.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\BrowserImportExplanation.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cursor_default.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\cursor_over.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\HC_dark_cursor_default.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\HC_dark_cursor_over.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\HC_light_cursor_default.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\HC_light_cursor_over.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-63.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-129.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeEPUB.targetsize-336.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-63.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-129.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeFile.targetsize-336.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-63.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-129.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgePDF.targetsize-336.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSplashScreen.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-16_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-20_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-24_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-30_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-32_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-36_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-40_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-48_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-64_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-72_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-80_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-96_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_altform-unplated_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare44x44.targetsize-256_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare50x50.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare71x71.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare150x150.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeSquare310x310.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\MicrosoftEdgeWide310x150.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewInprivateWindowIcon.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-100_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-100_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-125_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-125_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-150_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-150_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-200_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-200_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-400_contrast-black.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\NewWindowIcon.scale-400_contrast-white.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ReadingListEPUBImage360x270.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ReadingListImage360x270.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ReadingListPDFImage360x270.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TabPeekDefaultImage800x600.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TabPeekNewTabPageImage800x600.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TabPeekPDFImage800x600.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TabSweepExplanation.gif">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TabSweepExplanation.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\TransparentPixel.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\WebNotifications.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\ApplicationGuard\appguard.png">
+      <Filter>Assets\ApplicationGuard</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-150.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-200.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-400.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-100.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-125.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-150.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-200.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square150x150Logo.scale-400.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\GenericCover.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\MicrosoftEdgeBooksSquare150x150.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Oobe-ReadEbook.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Oobe-ReadEbook-Alternative.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-100.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-125.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-150.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-200.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square44x44Logo.scale-400.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-100.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\BookLibrary\Square71x71Logo.scale-125.png">
+      <Filter>Assets\BookLibrary</Filter>
+    </Image>
+    <Image Include="Assets\Dictionary\SidePaneLoading.png">
+      <Filter>Assets\Dictionary</Filter>
+    </Image>
+    <Image Include="Assets\Dictionary\InlineLoadingDark.png">
+      <Filter>Assets\Dictionary</Filter>
+    </Image>
+    <Image Include="Assets\Dictionary\InlineLoadingLight.png">
+      <Filter>Assets\Dictionary</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ApplicationGuard\LearnMore.html">
+      <Filter>Assets\ApplicationGuard</Filter>
+    </None>
+    <None Include="Assets\ApplicationGuard\appguard.css">
+      <Filter>Assets\ApplicationGuard</Filter>
+    </None>
+    <None Include="Assets\ApplicationGuard\appguard.js">
+      <Filter>Assets\ApplicationGuard</Filter>
+    </None>
+    <None Include="Assets\BookViewer\bookviewer-hostext.htm">
+      <Filter>Assets\BookViewer</Filter>
+    </None>
+    <None Include="Assets\BookViewer\manifest_BookReader_B171F20233094AC88D05A8EF7B9763E8.json">
+      <Filter>Assets\BookViewer</Filter>
+    </None>
+    <None Include="Assets\BookViewer\bookviewer.htm">
+      <Filter>Assets\BookViewer</Filter>
+    </None>
+    <None Include="Assets\BookViewer\css\bookviewer.css">
+      <Filter>Assets\BookViewer\css</Filter>
+    </None>
+    <None Include="Assets\BookViewer\css\bookcontent.css">
+      <Filter>Assets\BookViewer\css</Filter>
+    </None>
+    <None Include="Assets\BookViewer\js\bookviewer.js">
+      <Filter>Assets\BookViewer\js</Filter>
+    </None>
+    <None Include="Assets\BookViewer\js\startup.js">
+      <Filter>Assets\BookViewer\js</Filter>
+    </None>
+    <None Include="Assets\ContextMenu\HandleDefine.js">
+      <Filter>Assets\ContextMenu</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\DisableAboutFlag.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\dnserror.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\dnserror.js">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\ErrorPageScripts.js">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\ErrorPageStyles.css">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\forbidframingedge.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\hstscerterror.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_400.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_403.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_404.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_406.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_410.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_500.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_501.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\http_gen.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\httpErrorPagesScripts.js">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\ielogo.svg">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\invalidcert.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\navcancl.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\needhvsi.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\needie.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferror.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrordisabledforregion.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrormfnotfound.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorneedcontentlocally.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorneedcredentials.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorofflineaccessdenied.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorquitapplicationguard.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorrenewrentallicense.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorrepurchasecontent.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\pdferrorunknownerror.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\phishsite.js">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\PhishSite_Iframe.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\PhishSiteEdge.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\PhishSiteStyles.css">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\proxyerror.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\repost.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\servbusy.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\sslnavcancel.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\startfresh.html">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\tlserror.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\TridentErrorPageStyles.css">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\unknownprotocol.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\WpcBlockFrame.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\WpcBlockSite.js">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\acr_error.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\BlockSite.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\ErrorPages\defaultbrowser.htm">
+      <Filter>Assets\ErrorPages</Filter>
+    </None>
+    <None Include="Assets\OfflineTabs\OfflineTabs.html">
+      <Filter>Assets\OfflineTabs</Filter>
+    </None>
+    <None Include="Assets\OfflineTabs\OfflineTabs_Files\OfflineTabs.css">
+      <Filter>Assets\OfflineTabs\OfflineTabs_Files</Filter>
+    </None>
+    <None Include="Assets\Persona\PersonaPShader.cso">
+      <Filter>Assets\Persona</Filter>
+    </None>
+    <None Include="Assets\Persona\PersonaVShader.cso">
+      <Filter>Assets\Persona</Filter>
+    </None>
+    <None Include="Assets\ReadingView\ContentPRV.htm">
+      <Filter>Assets\ReadingView</Filter>
+    </None>
+    <None Include="Assets\ReadingView\ReadingViewer.js">
+      <Filter>Assets\ReadingView</Filter>
+    </None>
+    <None Include="Assets\ReadingView\css\ReadingViewStyle.css">
+      <Filter>Assets\ReadingView\css</Filter>
+    </None>
+    <None Include="Assets\WebNotes\WebNotesContent.htm">
+      <Filter>Assets\WebNotes</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\AutoFormFill\manifest_AutoFormFill_5ED10D46BD7E47DEB1F3685D2C0FCE08.json">
+      <Filter>Assets\HostExtensions\AutoFormFill</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\AutoFormFill\content\Autoformfill_ContentScript.js">
+      <Filter>Assets\HostExtensions\AutoFormFill\content</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\AutoFormFill\document\Autoformfill_CheckFormFillEligibility.js">
+      <Filter>Assets\HostExtensions\AutoFormFill\document</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\AutoFormFill\Prefill\Autoformfill_Prefill.js">
+      <Filter>Assets\HostExtensions\AutoFormFill\Prefill</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\LearningTools\LearningTools.js">
+      <Filter>Assets\HostExtensions\LearningTools</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\LearningTools\LearningToolsStyles.css">
+      <Filter>Assets\HostExtensions\LearningTools</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\LearningTools\manifest_LearningTools_7706F933-971C-41D1-9899-8A026EB5D824.json">
+      <Filter>Assets\HostExtensions\LearningTools</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\PinJSAPI\content\PinJSAPI_InjectedScript.js">
+      <Filter>Assets\HostExtensions\PinJSAPI\content</Filter>
+    </None>
+    <None Include="Assets\HostExtensions\PinJSAPI\manifest_PinJSAPI_EC01B57063BE468FAB6DB7EBFC3BF368.json">
+      <Filter>Assets\HostExtensions\PinJSAPI</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Fonts\BrowserMDL2AnimationAssets.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\ReadMDL2.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="Assets\Fonts\BrowserMDL.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw">
+      <Filter>Strings\en-US</Filter>
+    </PRIResource>
+    <PRIResource Include="Strings\es-AR\Resources.resw">
+      <Filter>Strings\es-AR</Filter>
+    </PRIResource>
+  </ItemGroup>
+</Project>
